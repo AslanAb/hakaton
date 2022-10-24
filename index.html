@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ферма соседа</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <p class="blueFont p1">Фермочка для овечек</p>
+        <div class="inMain">
+            <div>
+                <p class="blueFont">Загон 1</p>
+                <div class="zagon_1 zagonStyle"></div>
+            </div>
+            <div>
+                <p class="blueFont">Загон 2</p>
+                <div class="zagon_2 zagonStyle"></div>
+            </div>
+            <div>
+                <p class="blueFont">Загон 3</p>
+                <div class="zagon_3 zagonStyle"></div>
+            </div>
+            <div>
+                <p class="blueFont">Загон 4</p>
+                <div class="zagon_4 zagonStyle"></div>
+            </div>
+        </div>
+    </div>
+    <div class="divWithButtons">
+        <button class="refresh" onclick="refresh()">Обновить</button>
+        <button class="killThemAll" onclick="killAllSheeps()">Зарубить овечек</button>
+    </div>
+    <div class="divWithInput">
+        <input type="text" class="input" placeholder="Введите команду">
+        <button class="Run" onclick="runCommand()">Выполнить</button>
+    </div>
+    <div class="resultsOfTheDay">
+        <p class="p2">Журнал фермера</p>
+        <p class="p2">Ежедневные отчеты</p>
+        <span class="p2">Количество дней с момента наблюдения:</span>
+        <span class="p2 countOfDays"></span>
+        <div class="otchet"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
